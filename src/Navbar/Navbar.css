@@ -1,0 +1,139 @@
+.sub-navbar-1 {
+  width: 100%;
+  height: 100px;
+  background-color: orange;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.sub-1 {
+  width: 15%;
+  height: 70px;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.head-name {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Merriweather", serif;
+  /* font-family: 'Anton', sans-serif; */
+  /* font-family: 'Kaushan Script', cursive; */
+  /* font-family: 'Lobster', sans-serif; */
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+}
+.box {
+  width: 15%;
+  height: 50px;
+  /* background-color: darkblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.input {
+  width: 500px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  /* border: 1px solid black;  */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.btttn {
+  width: 450px;
+  height: 35px;
+  border: none;
+  outline: none;
+  /* background-color: rgb(133, 16, 16);  */
+}
+.img {
+  width: 18px;
+  height: 18px;
+}
+.sub-navbar-2 {
+  width: 100%;
+  height: 60px;
+  /* background-color: black; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.nisham {
+  position: sticky;
+  top: 0px !important;
+  background-color: white;
+  z-index: 999;
+}
+
+.sub-2 {
+  width: 30%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5px;
+}
+.link {
+  text-decoration: none;
+  color: #000;
+}
+.cart-img {
+  width: 70px;
+  height: 40px;
+  /* background-color: darkkhaki; */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.img2 {
+  width: 30px;
+  height: 30px;
+}
+.login-img {
+  width: 70px;
+  height: 40px;
+  /* background-color: darkcyan; */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.img3 {
+  width: 30px;
+  height: 30px;
+}
+.home-div {
+  width: 70px;
+  height: 40px;
+  /* background-color: darkgreen; */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  
+}
+.img4 {
+  width: 30px;
+  height: 30px;
+}
+
+.homtext {
+  display: none;
+  /* text-decoration: none; */
+  
+}
+
+ .home-div:hover{ 
+  .homtext{
+    display: block;
+  }
+}
+

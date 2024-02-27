@@ -1,0 +1,130 @@
+.container{
+    width: 100%;
+    /* height:1200px ; */
+    /* background-color: darkgoldenrod; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   height: 230vh !important;
+}
+.sub-div{
+    width: 15%;
+    height: 450px;
+    /* background: darkblue; */
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    justify-content:center;
+    align-items: center; 
+    flex-direction: column;
+    /* border: 1px solid black; */
+    border-radius: 3px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   
+}
+.img-div{
+    width: 100%;
+    height: 230px; 
+    /* background-color: brown; */
+    overflow: hidden;
+  
+}
+.pic{
+    width: 100%;
+    height: 230px;
+    transition: 0.1s ease-out;
+}
+.pic:hover{
+    transform:scale(1.1) ; 
+}
+.card-name{
+    width: 100%;
+    height: 150px;
+     /* background-color: darkgreen;  */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+
+  
+}
+.bbtn{
+    width: 110px;
+    height: 30px;
+    background:orangered;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* position: relative; */
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); */
+    /* overflow: hidden; */
+
+    
+
+  }
+  
+  
+
+  .link{
+    text-decoration: none;
+  } */
+  /* .name{
+    width: 100%;
+    height: 50px;
+    background-color: #23487f;
+  } */
+
+.link{
+  text-decoration: none;
+}
+.advt-div{
+  /* width: 87%; */
+  /* height: 13%; */
+  /* background-color: aqua; */
+  /* justify-content: center;
+  display: flex;
+  align-items: center; */
+}
+/* .advt{
+  width: 87%;
+  height: 50%;
+  background-color: blue;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* border-radius: 50px; */
+/* } */ */
+.picccc{
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50px; */
+}
+.picccc1{
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50px; */
+}
+.picccc2{
+  width: 100%;
+  height:100%;
+  /* border-radius: 50px; */
+}
+/* .price{
+  text-align: center;
+}
+.name{
+  text-align: center;
+  font-size: 10px;
+} */
+
+
+
+  
+  
+
+

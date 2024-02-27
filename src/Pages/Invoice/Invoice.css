@@ -1,0 +1,124 @@
+.containeeer{
+    width: 100%;
+    height: 88vh;
+    /* background-color: darkgrey; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.invoice-border{
+    width: 40%;
+    height: 95%;
+    /* background-color: rgb(244, 237, 237); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    gap: 10px;
+}
+.txt{
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #000; 
+    width: 400px;
+    height: 60px;
+    /* background-color: #dd1010; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.truck{
+    width: 30px;
+    height: 30px;
+}
+.input-div-1{
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.input-div{
+    border: none;
+    outline: none;
+    background: none;
+    
+    
+}
+.input-div-2{
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.input-div{
+    border: none;
+    outline: none;
+    background: none;
+    
+    
+}
+.input-div-3{
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.input-div{
+    border: none;
+    outline: none;
+    background: none;
+    
+    
+}
+.input-div-4{
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.input-div{
+    border: none;
+    outline: none;
+    background: none;
+    
+    
+}
+.invoice-btn{
+    width: 25%;
+    height: 10%;
+    background-color:orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.continue{
+   border: none;
+   outline: none;
+   color: #fff;
+   background: none;
+}  
