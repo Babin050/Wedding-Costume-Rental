@@ -4,6 +4,13 @@ import video from '../Home/videos/Wedding Video .mp4'
 import { Link } from 'react-router-dom'
 import pic1 from '../Home/videos/tittle_img.png.webp'
 import story1 from '../Home/videos/story1.jpg.webp'
+import aroww from '../Home/videos/right-arrow .png'
+import face from '../Home/videos/facebook (2).png'
+import insta from '../Home/videos/instagram (1).png'
+import google from '../Home/videos/social.png'
+import twitter from '../Home/videos/twitter.png'
+import link from '../Home/videos/linkedin.png'
+import github from '../Home/videos/github.png'
 
 
 const Home = () => {
@@ -25,8 +32,9 @@ const Home = () => {
          </div>
         </div>
         <div className='book'>
-          <Link to='Product'>
+          <Link to='/Product'>
           <button className='bttn'>SHOP NOW</button>
+          <img className='aroww' src={aroww} alt="" />
           </Link>
 
         </div>
@@ -86,6 +94,24 @@ const Home = () => {
       </div>
       </div>
       <div className='footer' >
+        <div className='social-media'>
+          <div className='facebook'><img className='face1' src={face} alt="" /></div>
+          <div className='twitter'> <img className='twitter1' src={twitter} alt="" /></div>
+          <div className='google'> <img className='google1' src={google} alt="" /></div>
+          <div className='insta'> <img className='insta1' src={insta} alt="" /></div>
+          {/* <div className='link'> <img className='link1' src={link} alt="" /></div>
+          <div className='github'> <img className='github1' src={github} alt="" /></div> */}
+          
+
+          
+         
+
+        </div>
+        <div className='cld'>
+          <p>© 2020 Copyright: wedding center.com</p>
+
+        </div>
+        
 
 
       </div>

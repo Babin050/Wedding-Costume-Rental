@@ -40,7 +40,7 @@ const Invoice = () => {
           <input className="input-div" type="text" placeholder="delivery fee" />
         </div>
 
-        <h2 className="txt">Product Details</h2>
+        <h2 className="txt">Price Details</h2>
         <div className="input-div-1">
         <input className="input-div" type="text" placeholder="Total MRP" />
         </div>

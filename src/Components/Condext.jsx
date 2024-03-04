@@ -1,14 +1,14 @@
 import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
+import { json } from "react-router-dom";
 
 export const Provider = createContext();
 
 const Condext = ({ children }) => {
   const [value, setValue] = useState([]);
   const [user, setUesr] = useState([]);
-  const [cart, setCart] = useState([]);
   const [search, setSearch] = useState([]);
-  const [totalprice,setTotalPrice] = useState(0);
+  const [totalprice, setTotalPrice] = useState(0);
 
   const [productdetalis, setProductDetails] = useState(null);
 
@@ -17,7 +17,7 @@ const Condext = ({ children }) => {
       const res = await axios.get("http://localhost:3010/api/babin");
       const data = res.data;
       setValue(data);
-    //   console.log(data, "running");
+      //   console.log(data, "running");
       //    setUsers(data)
     } catch (err) {
       console.log(err);
@@ -27,16 +27,39 @@ const Condext = ({ children }) => {
     fetchdata();
   }, []);
 
-  const totalPrice = cart.reduce((total, item) => total + item.price, 0);
+  const getCartFromStorage = () => {
+    const getCart = localStorage.getItem("Cart");
+    const storageCart = JSON.parse(getCart);
 
-  console.log(value,'nisham');
+    if (storageCart) {
+      try {
+        return storageCart !== null && storageCart !== undefined
+          ? storageCart
+          : [];
+      } catch (err) {
+        console.error(err);
+        return [];
+      }
+    }
+  };
+  const [cart, setCart] = useState(getCartFromStorage);
+
+  localStorage.setItem("Cart", JSON.stringify(cart));
+
+  useEffect(() => {
+    getCartFromStorage();
+  }, []);
+
+  console.log(value, "nisham");
+
+  const totalPrice = cart.reduce((total, item) => total + item.price, 0);
 
   return (
     <div>
       <Provider.Provider
         value={{
-            value,
-            setValue,
+          value,
+          setValue,
           user,
           setUesr,
           cart,
@@ -47,7 +70,6 @@ const Condext = ({ children }) => {
           setTotalPrice,
           search,
           setSearch,
-         
         }}
       >
         {children}

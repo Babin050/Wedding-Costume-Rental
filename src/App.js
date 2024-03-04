@@ -9,15 +9,17 @@ import Cart from "./Pages/Cart/Cart";
 import Login from "./Pages/Login/Login";
 import Productdetails from "./Pages/Productdetails";
 import Invoice from "./Pages/Invoice/Invoice";
+import Bill from "./Pages/Bill/Bill";
+import Admin from "./Pages/Admin/Admin";
 
 function App() {
   return (
- 
-      <Condext>
-        <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
+    <Condext>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Login />} />
+          <Route  element={<Navbar/>}>
+            <Route path="/Home" element={<Home />} />
             <Route
               path="/productDetails/:productId"
               element={<Productdetails />}
@@ -26,13 +28,13 @@ function App() {
             <Route path="/product" element={<Product />} />
             <Route path="/Cart" element={<Cart />} />
 
-            <Route path="Login" element={<Login />} />
             <Route path="/Invoice" element={<Invoice />} />
-          
-          </Routes>
-        </BrowserRouter>
-      </Condext>
-  
+            <Route path="/Bill" element={<Bill />} />
+            <Route path="/Admin" element={<Admin />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </Condext>
   );
 }
 

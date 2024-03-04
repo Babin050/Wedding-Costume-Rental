@@ -8,11 +8,11 @@
     flex-direction: column;
 }
 .invoice-border{
-    width: 40%;
-    height: 95%;
+    width: 25%;
+    height: 90%;
     /* background-color: rgb(244, 237, 237); */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 5px;

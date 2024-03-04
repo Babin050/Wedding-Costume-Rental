@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import "../Navbar/Navbar.css";
 import pic1 from "../Navbar/img/loupe.png";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import pic2 from "../Navbar/img/grocery.png";
 import pic3 from "../Navbar/img/user.png";
 import pic4 from "../Navbar/img/home.png";
@@ -9,6 +9,15 @@ import { Provider } from "../Components/Condext";
 
 const Navbar = () => {
   const { value } = useContext(Provider);
+  const [hoveredItem, setHoveredItem] = useState(null);
+
+  const handleMouseEnter = (itemName) => {
+    setHoveredItem(itemName);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredItem(null);
+  };
 
   const [inputValue, setInputValue] = useState("");
 
@@ -21,9 +30,9 @@ const Navbar = () => {
   // console.log("asdfghjklkjhgfds", inputValue);
 
   const searchFunction = () => {
-    const searchItem = value.filter((item) => item.type === inputValue);
-    // console.log("searchItem-----", searchItem);
-    
+    // Define a function called searchFunction
+    const searchItem = value.filter((item) => item.type === inputValue); // Filter the array value based on item.type matching inputValue
+    console.log("searchItem-----", searchItem); // Log the filtered result to the console
   };
 
   return (
@@ -47,22 +56,36 @@ const Navbar = () => {
         </div>
         {/* <div className='icons-div'> */}
         <div className="box">
-          <div className="home-div">
-            <Link to="/">
+          <Link to="/" style={{ textDecoration: "none",color:"black" }}>
+            <div
+              className="home-div"
+              onMouseEnter={() => handleMouseEnter("Home")}
+              onMouseLeave={handleMouseLeave}
+            >
               <img className="img4" src={pic4} alt="" />
-              <span className="homtext">Home</span>
-            </Link>
-          </div>
-          <Link to="cart">
-            <div className="cart-img">
-              <img className="img2" src={pic2} alt="" />
-              <span className="homtext">Cart</span>
+
+              {hoveredItem === "Home" && <span>Home</span>}
             </div>
           </Link>
-          <Link to="Login">
-            <div className="login-img">
+
+          <Link to="cart" style={{ textDecoration: "none" ,color:"black" }}>
+            <div
+              className="cart-img"
+              onMouseEnter={() => handleMouseEnter("Cart")}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img className="img2" src={pic2} alt="" />
+              {hoveredItem === "Cart" && <span>Cart</span>}
+            </div>
+          </Link>
+          <Link to="Login" style={{ textDecoration: "none" ,color:"black" }}>
+            <div
+              className="login-img"
+              onMouseEnter={() => handleMouseEnter("Login")}
+              onMouseLeave={handleMouseLeave}
+            >
               <img className="img3" src={pic3} alt="" />
-              <span className="homtext">Login</span>
+              {hoveredItem === "Login" && <span>Login</span>}
             </div>
           </Link>
           {/* </div> */}
@@ -84,6 +107,7 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
+        <Outlet />
       </div>
     </>
   );

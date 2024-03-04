@@ -94,10 +94,13 @@
   justify-content: center;
   display: flex;
   align-items: center;
+  position:relative;
+  
 }
 .img2 {
   width: 30px;
   height: 30px;
+  position: sticky;
 }
 .login-img {
   width: 70px;
@@ -125,15 +128,5 @@
   height: 30px;
 }
 
-.homtext {
-  display: none;
-  /* text-decoration: none; */
-  
-}
 
- .home-div:hover{ 
-  .homtext{
-    display: block;
-  }
-}
 

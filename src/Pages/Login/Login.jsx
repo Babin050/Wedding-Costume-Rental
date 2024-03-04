@@ -8,7 +8,7 @@ const Login = () => {
   const [username, setUsername] = useState("");
 
   const [password, setPassword] = useState("");
-  //  const [loginError, setLoginError] = useState('');
+   const [loginError, setLoginError] = useState('');
 
   const navigation = useNavigate();
   // // const locate = useNavigate();
@@ -21,7 +21,7 @@ const Login = () => {
     );
     
     if (foundUser.usertype === "user") {
-      navigation("/Invoice");
+      navigation("/Home");
       // if (username ==='admin' && password === 'babin')
       alert ('Login succeessfull')
     } else if (foundUser.usertype === "admin"){
@@ -29,7 +29,7 @@ const Login = () => {
       alert ('Login succeessfull')
     }
    else{
-   alert('invalid username')
+    setLoginError('invalid username or password')
   }
      
 

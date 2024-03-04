@@ -12,7 +12,7 @@ const Productdetails = () => {
   console.log(productId,"id");
 
   const products = value.data;
-    console.log(products);
+    // console.log(products);
   const selectedProduct = products.filter(product =>product.id == productId );
 
 
@@ -45,7 +45,7 @@ const Productdetails = () => {
           </button>
           
           </Link>
-          <Link to='/Login'>
+          <Link to='/Invoice'>
           <button className='buy-btn'>Buy Now</button>
           </Link>
           </div> 
